@@ -32,10 +32,12 @@
     </header>
     <div class="container">
         <div class="row">
+            <!-- Adressage mail -->
             <div class="six columns">
                 <label for="email">Votre adresse mail</label>
                 <input type="email" id="email" class="u-full-width" placeholder="votreadresse@mail.com">
             </div>
+            <!-- Adressage demande -->
             <div class="six columns">
                 <label for="demande">Votre Demande</label>
                 <select class="u-full-width" name="demande" id="demande">
@@ -46,13 +48,16 @@
                     <option value="other">Autre</option>
                 </select>
             </div>
-        </div>      
+        </div>
+        <!-- Question visiteur -->
         <label for="message">Message</label>
         <textarea class="u-full-width" placeholder="Bonjour, ..." name="message" id="message"></textarea>
+        <!-- Renvoie visiteur du contenue du mail -->
         <label class="check-renvoi">
             <input type="checkbox" name="mail-back">
             <span class="label-body">Vous renvoyer une copie</span>
         </label>
+        <!-- Bouton pour envoyer le tous -->
         <input class="button" type="submit" value="Envoier">
     </div>
 </body>
