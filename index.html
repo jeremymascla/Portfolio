@@ -14,22 +14,83 @@
     <script src="https://kit.fontawesome.com/2f84af4bca.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <div class="container">
         <!-- Grille positionner pour fixer la description de gauche -->
-        <div class="container">
-            <div class="six columns">
+        <div class="six columns">
+            <header>
                 <p>Mon nom est</p>
                 <h1>Jérémy Mascla</h1>
                 <h2>Développeur Web et recherche de connaissance et de compétence</h2>
                 <p></p>
-                <!-- Lien et image des différents réseaux -->
-                <a href="https://github.com/jeremymascla"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jérémy-mascla-845497287/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://discord.gg/DycXPyj"><i class="fa-brands fa-discord"></i></a>
-                <a href="#"><i class="fa-solid fa-comment"></i></a>
+            </header>
+            <!-- Lien et image des différents réseaux -->
+            <ul class="icon-header">
+                <li>
+                    <a href="https://github.com/jeremymascla">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jérémy-mascla-845497287/">
+                        <i
+                            class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                <li>
+                    <a href="https://discord.gg/DycXPyj">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Grille pour fixer la description de droite -->
+        <div class="six columns">
+            <img src="image/photo_projet_1.jpg" alt="Photo de mon premier projet " style="width: 100%;">
+            <!-- Préparation futur image projet -->
+            <!-- <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt=""> -->
+        </div>
+    </div>
+    <div class="container">
+        <h2>Mes compétences</h2>
+        <div class="row">
+            <div class="four columns icon">
+                <div class="titre">Les language</div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-php"></i>
+            </div>
+            <div class="four columns icon">
+                <div class="titre">Mes outils</div>
+                <ul>
+                    <li>Git et Github</li>
+                    <!-- <li></li>
+                    <li></li>
+                    <li></li> -->
+                </ul>
+            </div>
+            <div class="four columns icon">
+                <div class="titre">Mes Vérifcations</div>
+                <ul>
+                    <li>SEO</li>
+                    <li>W3C validator</li>
+                    <!-- <li></li>
+                    <li></li> -->
+                </ul>
             </div>
         </div>
-    </header>
+    </div>
     <div class="container">
         <div class="row">
             <!-- Adressage mail -->
@@ -58,7 +119,7 @@
             <span class="label-body">Vous renvoyer une copie</span>
         </label>
         <!-- Bouton pour envoyer le tous -->
-        <input class="button" type="submit" value="Envoier">
+        <input class="button" type="submit" value="Envoyer">
     </div>
 </body>
 </html>
