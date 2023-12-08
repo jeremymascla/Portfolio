@@ -18,6 +18,9 @@ i {
 .icon,.icon-header{
     text-align: center;
 }
+.titre{
+    padding:5px 0;
+}
 li>a>i {
     font-size: 4em;
 }
