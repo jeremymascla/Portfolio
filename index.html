@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="source/skeleton.css">
     <link rel="stylesheet" href="style.css">
     <!-- Icon de page -->
-
+    
     <!-- script pour importer les images depuis Fontawesome -->
     <script src="https://kit.fontawesome.com/2f84af4bca.js" crossorigin="anonymous"></script>
+    <!-- Script pour les emails depuis  SmtpJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div class="container">
@@ -51,7 +53,7 @@
         </div>
         <!-- Grille pour fixer la description de droite -->
         <div class="six columns">
-            <img src="image/photo_projet_1.jpg" alt="Photo de mon premier projet " style="width: 100%;">
+            <img src="image/photo_projet_1.jpg" alt="Photo de mon premier projet" style="width: 100%">
             <!-- Préparation futur image projet -->
             <!-- <img src="" alt="">
             <img src="" alt="">
@@ -97,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container send">
         <div class="row">
             <!-- Adressage mail -->
             <div class="six columns" id="commentaire">
@@ -121,11 +123,12 @@
         <textarea class="u-full-width" placeholder="Bonjour, ..." name="message" id="message"></textarea>
         <!-- Renvoie visiteur du contenue du mail -->
         <label class="check-renvoi">
-            <input type="checkbox" name="mail-back">
+            <input type="checkbox" name="mail-back" id="resend">
             <span class="label-body">Vous renvoyer une copie</span>
         </label>
         <!-- Bouton pour envoyer le tous -->
-        <input class="button" type="submit" value="Envoyer">
+        <button id="submit">Envoyer</button>
+        <script src="index.js"></script>
     </div>
 </body>
 </html>
