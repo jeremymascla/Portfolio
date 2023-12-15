@@ -18,6 +18,13 @@ i {
 .icon,.icon-header{text-align: center}
 .titre{padding:5px 0}
 li>a>i {font-size: 4em}
+
+.outils>li{
+    flex-direction: column;
+}
+.FA {
+    padding: 5px;
+}
 @media(min-width: 550px) {
     .check-renvoi {
         float: right;
@@ -32,6 +39,6 @@ li>a>i {font-size: 4em}
 p:first-of-type {
     margin-bottom: 0
 }
-.fa-html5:hover {
-    box
+.outils{
+    font-size: 0.8em;
 }
