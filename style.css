@@ -19,7 +19,7 @@ i {
 .titre{padding:5px 0}
 li>a>i {font-size: 4em}
 
-.outils>li{
+ul>li{
     flex-direction: column;
 }
 .FA {
@@ -35,6 +35,43 @@ li>a>i {font-size: 4em}
     li>a>i {font-size: 2em}
     .icon-header{text-align: left}
     i {font-size: 9em}
+
+    /* affichage info bulle pour non-téléphone */
+    
+    .tooltip{
+        position: relative;
+        display: inline-block;
+    }
+    .tooltext{
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 98%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .tooltip:hover .tooltext{
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
 }
 p:first-of-type {
     margin-bottom: 0
