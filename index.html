@@ -54,8 +54,8 @@
         </div>
         <!-- Grille pour fixer la description de droite -->
         <div class="six columns">
-            <img src="image/photo_projet_1.webp" alt="Photo de mon premier projet" style="width: 100%">
-            <img src="image/Projet-SuperM.webp" alt="Capture d'un projet nommé SuperM" style="width: 100%">
+            <img id="photo-projet-1" src="image/photo-projet-1-phone.webp" alt="Photo de mon premier projet" style="width: 100%">
+            <img id="photo-projet-SuperM" src="image/Projet-SuperM-phone.webp" alt="Capture d'un projet nommé SuperM" style="width: 100%">
             <!-- Préparation futur image projet -->
             <!-- <img src="" alt="">
             <img src="" alt="">
@@ -192,7 +192,8 @@
                 <!-- Adressage mail -->
                 <div class="six columns" id="commentaire">
                     <label for="email">Votre adresse mail</label>
-                    <input type="email" id="email" class="u-full-width" placeholder="votreadresse@mail.com">
+                    <input type="email" name="email" id="email" class="u-full-width" placeholder="votreadresse@mail.com"
+                        autocomplete="email"/>
                 </div>
                 <!-- Adressage demande -->
                 <div class="six columns">
@@ -216,7 +217,7 @@
             </label>
             <!-- Bouton pour envoyer le tous -->
             <button type="submit">Envoyer</button>
-            <script src="index.js"></script>
+            <script src="main.js"></script>
         </form>
     </div>
 </body>

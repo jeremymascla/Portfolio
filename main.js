@@ -18,3 +18,12 @@ submit.addEventListener('submit',(e)=>{
       message => alert(message)
     );
 })
+
+const pressed=[];
+const secretCode="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
+window.addEventListener('keyup',(e)=>{
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length-1,pressed.length-secretCode.length);
+  if(pressed.join('').includes(secretCode)){
+    document.body.style.backgroundColor='#f00';
+  }})
