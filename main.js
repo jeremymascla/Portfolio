@@ -10,8 +10,8 @@ submit.addEventListener('submit',(e)=>{
 
     Email.send({
         SecureToken : "66091fc9-2432-4da6-8c54-0bafc913bc9c",
-        To : `${email.value}`,
-        From : "jeremy.mascla@gmail.com",
+        To :  "jeremy.mascla@gmail.com",
+        From :"jeremy.mascla@gmail.com",
         Subject : `${demande.value}`,
         Body : `de ${email.value} dit ${message.value}`
     }).then(
@@ -19,11 +19,11 @@ submit.addEventListener('submit',(e)=>{
     );
 })
 
-// const pressed=[];
-// const secretCode="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
-// window.addEventListener('keyup',(e)=>{
-//   pressed.push(e.key);
-//   pressed.splice(-secretCode.length-1,pressed.length-secretCode.length);
-//   if(pressed.join('').includes(secretCode)){
-//     document.body.style.backgroundColor='#f00';
-//   }})
+const pressed=[];
+const secretCode="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
+window.addEventListener('keyup',(e)=>{
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length-1,pressed.length-secretCode.length);
+  if(pressed.join('').includes(secretCode)){
+    document.body.style.backgroundColor='#f00';
+  }})
